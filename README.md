@@ -37,9 +37,9 @@ To recover, we force a stable 3.3V rail and access the chip via SWD.
 
 ## 1️⃣ Add a Low-Ohm Resistor
 
-Solder a small resistor (1Ω–10Ω works fine) as shown below.
+Solder a small resistor (1Ω–10Ω works fine) between RST and VCC (3.3V) as shown below.
 
-This helps stabilize the power path during recovery.
+This helps stabilize the RST pin during recovery.
 
 ![Low Ohm Resistor Setup](./1.jpg)
 
@@ -59,7 +59,7 @@ Connect a stable external **3.3V supply directly to the VDD pad** on the back of
 
 Connect your J-Link or ST-Link to the 4 SWD pads:
 
-- VDD (3.3V reference)
+- VDD/Vtref (3.3V reference)
 - GND
 - SWDIO
 - SWCLK
